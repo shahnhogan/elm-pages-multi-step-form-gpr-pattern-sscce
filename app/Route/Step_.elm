@@ -61,16 +61,16 @@ init app shared =
             case app.url of
                 Just url ->
                     case url.path of
-                        [ _, "step-1" ] ->
+                        [ "step-1" ] ->
                             "Started Step 1"
 
-                        [ _, "step-2" ] ->
+                        [ "step-2" ] ->
                             "Completed Step 1 and Started Step 2"
 
-                        [ _, "step-3" ] ->
+                        [ "step-3" ] ->
                             "Completed Step 2 and Started Step 3"
 
-                        [ _, "step-4" ] ->
+                        [ "step-4" ] ->
                             "Completed Step 3 and Started Step 4"
 
                         _ ->
